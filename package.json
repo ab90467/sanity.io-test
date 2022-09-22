@@ -1,0 +1,37 @@
+{
+  "name": "bulderbankblog",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Johnny Øvreberg",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start-cms": "sanity start",
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "login": "sanity login",
+    "upgrade": "sanity upgrade"
+  },
+  "keywords": [
+    "sanity",
+    "Bulder Bank",
+    "cms"
+  ],
+  "dependencies": {
+    "@sanity/base": "^2.29.8",
+    "@sanity/components": "^2.14.0",
+    "@sanity/core": "^2.29.5",
+    "@sanity/default-layout": "^2.29.8",
+    "@sanity/default-login": "^2.29.8",
+    "@sanity/desk-tool": "^2.29.8",
+    "@sanity/production-preview": "^2.29.3",
+    "@sanity/vision": "^2.29.8",
+    "get-youtube-id": "^1.0.1",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "react-youtube": "^7.13.1",
+    "styled-components": "^5.3.1"
+  }
+}
