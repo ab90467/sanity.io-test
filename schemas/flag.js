@@ -1,5 +1,6 @@
 import {TagIcon as icon} from '@sanity/icons'
 
+
 export default {
   name: 'flag',
   title: 'Flag',
