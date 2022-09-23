@@ -34,8 +34,16 @@ export default {
       name: 'stringFlag',
       title: 'String flag',
       type: 'string',
-      validation: Rule => Rule.required(),
       hidden: ({parent, document}) => parent?.typeFlag !== 'string',
+      validation: Rule => Rule.custom((stringFlag, context) => {
+        if ((!stringFlag || stringFlag === '') && context.parent.typeFlag === 'string') {
+          return 'Not a valid string'
+        }
+        if (context.parent.typeFlag === 'boolean'){
+          // clear input field
+        }
+        return true
+      })
     },
     {
       name: 'booleanflag',
@@ -49,6 +57,6 @@ export default {
     }
   ],
   preview: {
-    select: {title: 'key', subtitle: 'value', media: 'image'},
+    select: {title: 'key', subtitle: 'desc',},
   },
 }

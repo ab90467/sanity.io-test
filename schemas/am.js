@@ -1,11 +1,11 @@
-import {UserIcon, RocketIcon as icon} from '@sanity/icons'
+import {UserIcon, RocketIcon, StarIcon, EarthGlobeIcon as Icon} from '@sanity/icons'
 
 export default {
-  name: 'QM',
-  title: 'QM',
+  name: 'AM',
+  title: 'AM',
   type: 'document',
   __experimental_actions: [/*'create',*/ 'update', /*'delete',*/ 'publish'],
-  icon: icon,
+  icon: Icon,
   fields: [
     {
       name: 'Enviroment',
@@ -20,13 +20,10 @@ export default {
     },
     {
       name: 'keyvalue',
-      title: 'List of keys',
-      description: 'a list of key -> value for thhis enviroment',
+      title: 'List of strings',
+      description: 'Strings for this page',
       type: 'array',
       of: [{type: 'flag'}],
     },
   ],
-  preview: {
-    select: {title: 'Enviroment', subtitle: 'desc',},
-  },
 };
